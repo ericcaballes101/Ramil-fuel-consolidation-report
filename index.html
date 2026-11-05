@@ -381,7 +381,7 @@ function render(){
     <div class="c"><div class="l">Total amount</div><div class="v">${peso(tot)}</div><div class="n">${intf(rows.reduce((s,r)=>s+r.qty,0).toFixed(0))} L fuel</div></div>
     <div class="c phys"><div class="l">Physical</div><div class="v">${peso(all.P)}</div><div class="n">${all.nP} receipts</div></div>
     <div class="c onl"><div class="l">Online</div><div class="v">${peso(all.O)}</div><div class="n">${all.nO} receipt${all.nO===1?"":"s"}</div></div>
-    <div class="c pend"><div class="l">Not yet marked</div><div class="v">${peso(all.N)}</div><div class="n">${all.nN} receipts</div></div>
+    <div class="c pend"><div class="l">Pending</div><div class="v">${peso(all.N)}</div><div class="n">${all.nN} receipts</div></div>
     <div class="c cash"><div class="l">Cash payment fuel</div><div class="v">${peso(all.C)}</div><div class="n">${all.nC} receipt${all.nC===1?'':'s'}</div></div>`;
   const q=$('#q').value.trim().toLowerCase(),f=$('#flt').value;
   let h='';
